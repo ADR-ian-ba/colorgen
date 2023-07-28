@@ -9,5 +9,6 @@ import ForgetPassword from "./ForgetPassword"
 import ForgetUsername from "./ForgetUsername"
 import VerifyForgetPasswordPage from "./VerifyForgetPasswordPage"
 import PublicPalletePage from "./PublicPalletePage"
+import ImagePage from "./ImagePage"
 
-export {PublicPalletePage ,VerifyForgetPasswordPage, ForgetPassword ,ForgetUsername, MyPallete, EmailSentPage, VerifyPage, LandingPage, LoginPage, RegisterPage, GeneratePage}
+export {ImagePage, PublicPalletePage ,VerifyForgetPasswordPage, ForgetPassword ,ForgetUsername, MyPallete, EmailSentPage, VerifyPage, LandingPage, LoginPage, RegisterPage, GeneratePage}

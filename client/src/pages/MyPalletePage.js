@@ -1,4 +1,4 @@
-import { NormalHeader, Pallete } from "../components"
+import { Footer, NormalHeader, Pallete } from "../components"
 import { UserContext } from "../context/UserContext"
 import { useContext} from "react"
 import { Link } from "react-router-dom"
@@ -38,6 +38,8 @@ const MyPallete = () => {
 
 
       </div>
+
+      <Footer/>
     </main>
   )
 }

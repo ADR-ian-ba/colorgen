@@ -8,6 +8,7 @@
 body {
   font-family: "Roboto", sans-serif;
   background-color: var(--primary-white);
+  overflow-x: hidden;
 }
 
 .generate-page-main {
@@ -993,6 +994,37 @@ header nav ul .register:hover {
   height: 25px;
 }
 
+.image-pallete .container {
+  margin-top: 1em;
+  border-top: 1px solid black;
+}
+.image-pallete .container h1 {
+  text-align: center;
+  font-size: 5em;
+  margin: 0 auto;
+  max-width: 700px;
+}
+.image-pallete .container p {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 500px;
+  color: var(--primary-gray);
+}
+.image-pallete .container .top-nav {
+  margin: 30px 2em;
+  display: flex;
+  gap: 30px;
+}
+.image-pallete .container .top-nav button {
+  padding: 5px 20px;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
 @media only screen and (max-width: 400px) {
   .my-pallete .container .my-pallete-container {
     margin: 3em 2em;
@@ -1003,6 +1035,62 @@ header nav ul .register:hover {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
 }
+.footer-img {
+  aspect-ratio: 900/300;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../assets/layered-waves.svg);
+}
+
+.footer {
+  width: 100vw;
+  height: 100%;
+  padding: 0 4em;
+  padding-bottom: 4em;
+  background-color: var(--primary-color);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  gap: 20px;
+  justify-content: space-around;
+}
+.footer h3 {
+  margin-bottom: 0.5em;
+}
+.footer .container-about {
+  color: var(--primary-text-color);
+  margin-right: 2em;
+}
+.footer .container-about p {
+  max-width: 500px;
+  margin-top: 0;
+}
+.footer .container-link {
+  color: var(--primary-text-color);
+}
+.footer .container-link .link {
+  text-decoration: none;
+  color: var(--primary-text-color);
+  font-size: 0.9em;
+  margin-bottom: 20px;
+  display: block;
+}
+.footer .container-support {
+  color: var(--primary-text-color);
+}
+.footer .container-support a {
+  text-decoration: none;
+  color: rgb(150, 0, 0);
+}
+.footer .container-follow {
+  color: var(--primary-text-color);
+}
+.footer .container-follow a svg {
+  width: 40px;
+  height: 40px;
+}
+
 @keyframes colorShift {
   to {
     background-position: 0 175px;

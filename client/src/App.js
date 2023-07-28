@@ -1,7 +1,7 @@
 import './App.css';
 import './styles/index.css'
 import {Route, Routes} from "react-router-dom"
-import { VerifyPage, LandingPage, LoginPage, RegisterPage, GeneratePage, EmailSentPage, MyPallete, ForgetPassword, ForgetUsername, VerifyForgetPasswordPage, PublicPalletePage } from './pages';
+import { VerifyPage, LandingPage, LoginPage, RegisterPage, GeneratePage, EmailSentPage, MyPallete, ForgetPassword, ForgetUsername, VerifyForgetPasswordPage, PublicPalletePage, ImagePage } from './pages';
 import { UserContextProvider, UserContext } from './context/UserContext';
 import { useEffect, useContext } from 'react';
 
@@ -43,7 +43,6 @@ function App() {
       if(data === "there is no token"){
 
       }else{
-        console.log(data.username, data.authorization)
         setLogin(data.authorization)
         setUsername(data.username)
 
@@ -77,6 +76,7 @@ function App() {
         <Route path="/forgetpassword" element={<ForgetPassword/>}/>
         <Route path="/forgetusername" element={<ForgetUsername/>}/>
         <Route path="/verifyforgetpassword" element={<VerifyForgetPasswordPage/>}/>
+        <Route path="/image" element={<ImagePage/>}/>
       </Routes>
 
   );

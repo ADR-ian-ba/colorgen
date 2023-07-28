@@ -4,7 +4,7 @@ const UserContext = createContext()
 
 const UserContextProvider = (props) => {
     
-    const [login, setLogin] = useState(true)
+    const [login, setLogin] = useState(false)
     const [username, setUsername] = useState("")
     const [isDropActive, setIsDropActive] = useState(false)
     const [favPallete, setFavPallete] = useState([])

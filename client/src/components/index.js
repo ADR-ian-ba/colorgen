@@ -10,5 +10,6 @@ import PopUp from "./PopUp";
 import Pallete from "./Pallete";
 import Palletep from "./Palletep";
 import ColorOption from "./ColorOption";
+import Footer from "./Footer";
 
-export {ColorOption, Palletep, Pallete, PopUp, SnackSuccess, SnackFail, Color,LandingHeader, NormalHeader, Navigation, NavigationItem, Dropdown}
+export {Footer, ColorOption, Palletep, Pallete, PopUp, SnackSuccess, SnackFail, Color,LandingHeader, NormalHeader, Navigation, NavigationItem, Dropdown}
